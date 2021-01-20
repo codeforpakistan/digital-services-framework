@@ -1,0 +1,19 @@
+{
+  "name": "kpitb-framework",
+  "version": "0.0.1",
+  "description": "KPIT Digital Services Framework",
+  "main": "index.js",
+  "authors": {
+    "name": "Shaji Ahmed",
+    "email": "shaji@codeforpakistan.org"
+  },
+  "repository": "https://github.com/codeforpakistan/kpitb-framework",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  }
+}
