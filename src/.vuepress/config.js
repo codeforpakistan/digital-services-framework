@@ -1,10 +1,83 @@
 const { description } = require('../../package')
 
+const navbar = {
+  items: [
+    { 
+      text: 'Guides',
+      link: '/guides/'
+    },
+    { 
+      text: 'Framework',
+      link: '/framework/'
+    },
+    {
+      text: 'Resources',
+      link: '/resources/',
+    }
+  ]
+}
+
+const sidebar = {
+  guides: [
+    {
+      title: 'Essentials',
+      collapsable: false,
+      children: [
+      ]
+    },
+    {
+      title: 'Examples',
+      collapsable: false,
+      children: [
+      ]
+    }
+  ],
+  framework: [
+    {
+      title: 'Framework',
+      collapsable: false,
+      children:[
+        '/framework/'
+      ]
+    },
+    {
+      title: 'Standards',
+      collapsable: false,
+      children: [
+        '/framework/standards/',
+        '/framework/standards/data-storage',
+        '/framework/standards/communication',
+        '/framework/standards/information'
+      ]
+    },
+    {
+      title: 'Technology',
+      collapsable: false,
+      children: [
+        '/framework/technology/',
+        '/framework/technology/api/',
+        '/framework/technology/api/standards'
+      ]
+    },
+    {
+      title: 'Design',
+      collapsable: false,
+      children: [
+        '/framework/design/principles',
+        '/framework/design/design-system',
+        '/framework/design/prototype-kits',
+        '/framework/design/style-guide',
+        '/framework/design/accessibility'
+      ]
+    }
+  ]
+}
+
 module.exports = {
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
-  title: 'Vuepress Docs Boilerplate',
+  title: 'KP Digital Services Framework',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#description
    */
@@ -32,31 +105,11 @@ module.exports = {
     docsDir: '',
     editLinkText: '',
     lastUpdated: false,
-    nav: [
-      {
-        text: 'Guide',
-        link: '/guide/',
-      },
-      {
-        text: 'Config',
-        link: '/config/'
-      },
-      {
-        text: 'VuePress',
-        link: 'https://v1.vuepress.vuejs.org'
-      }
-    ],
+    nav: navbar.items,
     sidebar: {
-      '/guide/': [
-        {
-          title: 'Guide',
-          collapsable: false,
-          children: [
-            '',
-            'using-vue',
-          ]
-        }
-      ],
+      collapsable: false,
+      '/guides/': sidebar.guides,
+      '/framework/': sidebar.framework
     }
   },
 

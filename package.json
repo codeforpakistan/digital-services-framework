@@ -1,7 +1,7 @@
 {
   "name": "kpitb-framework",
   "version": "0.0.1",
-  "description": "KPIT Digital Services Framework",
+  "description": "KP Digital Services Framework",
   "main": "index.js",
   "authors": {
     "name": "Shaji Ahmed",
