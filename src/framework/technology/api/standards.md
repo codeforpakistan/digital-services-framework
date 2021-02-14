@@ -1,2 +1,0 @@
-# API Technical Standards
-

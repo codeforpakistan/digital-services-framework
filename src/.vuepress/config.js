@@ -2,17 +2,25 @@ const { description } = require('../../package')
 
 const navbar = {
   items: [
-    { 
+    {
       text: 'Guides',
       link: '/guides/'
     },
     { 
-      text: 'Framework',
-      link: '/framework/'
+      text: 'Technology',
+      link: '/technology/'
+    },
+    { 
+      text: 'Design',
+      link: '/design/'
     },
     {
-      text: 'Resources',
-      link: '/resources/',
+      text: 'Services',
+      items: [
+        { text: 'API', link: 'https://api.kpgov.tech' },
+        { text: 'Pehchaan', link: 'https://pehchaan.kpgov.tech' },
+        { text: 'Daakia', link: 'https://daakia.kpgov.tech' }
+      ]
     }
   ]
 }
@@ -20,57 +28,56 @@ const navbar = {
 const sidebar = {
   guides: [
     {
-      title: 'Essentials',
+      title: 'Guides',
+      path: '/guides/',
       collapsable: false,
       children: [
+        '/guides/principles',
+      ]
+    },
+  ],
+  technology: [
+    {
+      title: 'Technology',
+      path: '/technology/',
+      collapsable: false,
+      children: [
+        '/technology/code-of-practice',
+        '/technology/architecture',
+        '/technology/api-standards',
+        '/technology/resources',
+        '/technology/sitemap',
       ]
     },
     {
-      title: 'Examples',
+      title: 'API Management',
+      path: '/technology/api/',
       collapsable: false,
       children: [
+        '/technology/api/requirements',
+        '/technology/api/prototyping',
+        '/technology/api/testing',
+        '/technology/api/service-levels',
+        '/technology/api/documentation',
+        '/technology/api/management',
+      ]
+    },
+  ],
+  design: [
+    {
+      title: 'Design',
+      path: '/design/',
+      collapsable: false,
+      children: [
+        '/design/principles',
+        '/design/design-system',
+        '/design/prototype-kits',
+        '/design/style-guide',
+        '/design/accessibility',
+        '/design/resources'
       ]
     }
   ],
-  framework: [
-    {
-      title: 'Framework',
-      collapsable: false,
-      children:[
-        '/framework/'
-      ]
-    },
-    {
-      title: 'Standards',
-      collapsable: false,
-      children: [
-        '/framework/standards/',
-        '/framework/standards/data-storage',
-        '/framework/standards/communication',
-        '/framework/standards/information'
-      ]
-    },
-    {
-      title: 'Technology',
-      collapsable: false,
-      children: [
-        '/framework/technology/',
-        '/framework/technology/api/',
-        '/framework/technology/api/standards'
-      ]
-    },
-    {
-      title: 'Design',
-      collapsable: false,
-      children: [
-        '/framework/design/principles',
-        '/framework/design/design-system',
-        '/framework/design/prototype-kits',
-        '/framework/design/style-guide',
-        '/framework/design/accessibility'
-      ]
-    }
-  ]
 }
 
 module.exports = {
@@ -100,17 +107,19 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: '',
-    editLinks: false,
+    repo: 'https://github.com/codeforpakistan/kpitb-framework',
+    editLinks: true,
     docsDir: '',
     editLinkText: '',
-    lastUpdated: false,
+    lastUpdated: 'Last Updated',
     nav: navbar.items,
     sidebar: {
       collapsable: false,
       '/guides/': sidebar.guides,
-      '/framework/': sidebar.framework
-    }
+      '/technology/': sidebar.technology,
+      '/design/': sidebar.design
+    },
+    // sidebarDepth: 0
   },
 
   /**
