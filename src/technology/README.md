@@ -1,6 +1,6 @@
 # Technology Code of Practice
 
-- [Code of practice](/technology/code-of-practice)
+- [Code of practice](./code-of-practice.html)
 
 
-- [Sitemap](/technology/sitemap)
+- [Sitemap](./sitemap.html)

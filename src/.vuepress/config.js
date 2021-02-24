@@ -16,11 +16,7 @@ const navbar = {
     },
     {
       text: 'Services',
-      items: [
-        { text: 'API', link: 'https://api.kpgov.tech' },
-        { text: 'Pehchaan', link: 'https://pehchaan.kpgov.tech' },
-        { text: 'Daakia', link: 'https://daakia.kpgov.tech' }
-      ]
+      link: '/services/'
     }
   ]
 }
@@ -35,11 +31,18 @@ const sidebar = {
         '/guides/principles',
       ]
     },
+    {
+      title: 'Project Management',
+      path: '/guides/project-management/',
+      collapsable: false,
+      children: [
+        '/guides/project-management/inception'
+      ]
+    }
   ],
   technology: [
     {
       title: 'Technology',
-      path: '/technology/',
       collapsable: false,
       children: [
         '/technology/code-of-practice',
@@ -51,9 +54,9 @@ const sidebar = {
     },
     {
       title: 'API Management',
-      path: '/technology/api/',
       collapsable: false,
       children: [
+        '/technology/api/',
         '/technology/api/requirements',
         '/technology/api/prototyping',
         '/technology/api/testing',
@@ -78,6 +81,34 @@ const sidebar = {
       ]
     }
   ],
+  services: [
+    {
+      title: 'Services',
+      path: '/services/',
+      collapsable: false,
+    },
+    {
+      title: 'API Gateway',
+      collapsable: false,
+      children: [
+        '/services/rehnuma/',
+      ]
+    },
+    {
+      title: 'Digital Identity',
+      collapsable: false,
+      children: [
+        '/services/pehchaan/',
+      ]
+    },
+    {
+      title: 'Unified Communications',
+      collapsable: false,
+      children: [
+        '/services/paighaam/',
+      ]
+    }
+  ]
 }
 
 module.exports = {
@@ -117,9 +148,9 @@ module.exports = {
       collapsable: false,
       '/guides/': sidebar.guides,
       '/technology/': sidebar.technology,
-      '/design/': sidebar.design
-    },
-    // sidebarDepth: 0
+      '/design/': sidebar.design,
+      '/services/': sidebar.services
+    }
   },
 
   /**

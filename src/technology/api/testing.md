@@ -19,7 +19,9 @@ A controlled release is likely to start with rolling out your API to users you h
 
 This will involve smoke testing your API in production with a small number of users to make sure data is returning correctly. Any issues with testing might take some time for you to put right and you should communicate this to future users of your API.
 
-> For more information about smoke testing, read the Service Manual guidance on using smoke tests after you deploy.
+::: tip
+For more information about smoke testing, read the Service Manual guidance on using smoke tests after you deploy.
+:::
 
 You can do a controlled release while still working openly, by:
 
@@ -73,8 +75,8 @@ When testing your API, you should provide your users with test data for as many 
 
 Involve your technical writer in the design, running and analysis of your testing. This lets you test the docs together with the API itself, and helps your technical writer get a deeper understanding of any issues developers have and the language they use.
 
-## Adding your API to the API catalogue
-Once your API goes into beta, you should add it to the government [API catalogue](https://api.kpgov.tech/catalogue).
+## Adding your API to the service catalogue
+Once your API goes into beta, you should add it to the government [service catalogue](https://rehnuma.kpgov.tech).
 
 This shows you have met the standards necessary to publish a government API, which will help you build trust with your users. The catalogue might also help you publicise your API within the API community and across government organisations.
 

@@ -33,7 +33,9 @@ When caching, you should:
 
 If you have a volatile API, you should not cache by default.
 
-> You should never cache sensitive or user-specific data especially anything that would fall under the General Data Protection Regulation.
+::: warning
+You should never cache sensitive or user-specific data especially anything that would fall under the General Data Protection Regulation.
+:::
 
 When developing a data API (rather than a transactional API), you should consider whether to let users make large data requests or whether to restrict users to making a number of smaller requests. If you believe large data requests are necessary for your users, you may want to consider:
 

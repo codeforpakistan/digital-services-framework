@@ -2,7 +2,7 @@
 
 Gather user requirements to gain understanding of the context and the wider environment in which your API will operate.
 
-Before starting, you should check the [API Catalogue](https://api.kpgov.tech/catalogue) to understand what APIs already exist in government and what best practice is available. You should also read the [API technical and data standards](/technology/api-standards).
+Before starting, you should check the [service catalogue](https://rehnuma.kpgov.tech) to understand what APIs already exist in government and what best practice is available. You should also read the [API technical and data standards](/technology/api-standards.html).
 
 During requirment gathering you will need to identify:
 

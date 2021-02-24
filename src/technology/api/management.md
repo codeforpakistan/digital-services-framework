@@ -1,6 +1,6 @@
 # Managing live APIs 
 
-When you make your API live, you'll make it available online for all your users. You can publicise this by adding it to the government API catalogue. You should let your beta users know about this change, as well as those who have participated in your user research.
+When you make your API live, you'll make it available online for all your users. You can publicise this by adding it to the government service catalogue. You should let your beta users know about this change, as well as those who have participated in your user research.
 
 You might choose to describe your API as **stable** rather than **live** if there are still areas you're working on from your beta testing.
 
@@ -35,4 +35,4 @@ You should also:
 - consider maintaining old versions of your API until the number of users falls to a certain threshold - this will involve clearly versioning your documentation along with your API to avoid developers using the wrong documentation
 - update your API documentation to say when you're deprecating and retiring the API
 - have your API support team communicate with your users about timelines for the deprecation and retirement
-- update your entry in the API catalogue with an end date for the deprecated version
+- update your entry in the service catalogue with an end date for the deprecated version

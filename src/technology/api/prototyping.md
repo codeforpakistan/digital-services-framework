@@ -36,7 +36,9 @@ If you decide to proceed to beta, you will then need to iterate your API using t
 ## Creating a sandbox for your API
 During the **alpha** or **beta** stage of your API development, you might consider producing an API sandbox. 
 
-> A sandbox is an implementation of your API where developers can test the API, by submitting API requests and receiving responses that realistically reflect the system behaviour*.
+::: tip What is a Sandbox?
+A sandbox is an implementation of your API where developers can test the API, by submitting API requests and receiving responses that realistically reflect the system behaviour.
+:::
 
 Most APIs will need a sandbox unless they're very simple. Often you will decide to build your sandbox in beta. For more information, read the guidance on creating a sandbox for your beta API.
 
@@ -52,4 +54,6 @@ When you get to the end of protoyping, make sure the API meets user needs, it is
 
 Before deciding to move your API to beta, you might want to conduct an exit review. You should do this with KPITB team.
 
-> An exit review includes a checklist of quality considerations your API will need to meet, including how well your API meets the user needs you've identified.
+::: tip Exit Reviews
+An exit review includes a checklist of quality considerations your API will need to meet, including how well your API meets the user needs you've identified.
+:::

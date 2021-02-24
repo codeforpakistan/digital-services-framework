@@ -223,7 +223,7 @@ All API naming in URLs (including the name of your API, namespaces and resources
 * be human-guessable, avoiding technical or specialist terms where possible
 * use hyphens rather than underscores as word separators for multiword names
 
-For example: ```[api-name].api.kp.gov.pk```
+For example: ```[api-name].kpgov.tech```
 
 ## Avoid the use of namespaces
 Generally, each of your APIs should have its own domain, just as each service has its own domain. This will also avoid API sprawl and simplify your versioning.
@@ -312,8 +312,8 @@ Where the API delivers personal or private information you, as the data controll
 ## Document your API
 To document your API start you should:
 
-* use the OpenAPI 3 Specification where appropriate for generating documentation (recommended by the Open Standards Board)
-* follow the GOV.UK guidance on how to document APIs and how to write API reference documentation
+* use the [OpenAPI 3 Specification](https://swagger.io/specification/) where appropriate for generating documentation (recommended by the Open Standards Board)
+* follow our guidance on how to [document APIs](/technology/api/documentation.html) and how to write API [reference documentation](/technology/api/documentation.html#reference-documentation)
 * provide sample code to illustrate how to call the API and to let users know what responses they can expect
 
 In your documentation, you should include:
