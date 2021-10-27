@@ -112,6 +112,7 @@ const sidebar = {
 }
 
 module.exports = {
+  base: '/kpitb-framework/',
   /**
    * Ref：https://v1.vuepress.vuejs.org/config/#title
    */
