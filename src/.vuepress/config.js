@@ -139,7 +139,7 @@ module.exports = {
    * ref：https://v1.vuepress.vuejs.org/theme/default-theme-config.html
    */
   themeConfig: {
-    repo: 'https://github.com/codeforpakistan/kpitb-framework',
+    repo: 'https://github.com/codeforpakistan/digital-services-framework',
     editLinks: true,
     docsDir: '',
     editLinkText: '',
