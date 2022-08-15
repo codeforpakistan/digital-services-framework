@@ -7,7 +7,7 @@
     "name": "Shaji Ahmed",
     "email": "shaji@codeforpakistan.org"
   },
-  "repository": "https://github.com/codeforpakistan/kpitb-framework",
+  "repository": "https://github.com/codeforpakistan/digital-services-framework",
   "scripts": {
     "dev": "vuepress dev src",
     "build": "vuepress build src"
